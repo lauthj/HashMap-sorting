@@ -31,13 +31,14 @@ public class HashMapDemo {
       for(Entry<String, Double> mapping : mappings){
           System.out.println(mapping.getKey() + " ==> " + mapping.getValue());
       }
+      
       System.out.println();
       
       // Deposit 1000 into Zara's account
       double balance = hm.get("Zara").doubleValue();
       hm.put("Zara", (balance + 1000));
       System.out.println("Zara's new balance: " + hm.get("Zara"));
-  
+   }
 
 
-}}
+}
